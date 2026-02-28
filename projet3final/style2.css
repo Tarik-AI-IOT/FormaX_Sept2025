@@ -27,6 +27,12 @@
     animation: glow 3s infinite alternate;
 }
 
+spline-viewer {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+
 /* Animation du glow (respiration de lumière) */
 @keyframes glow {
     from {
@@ -67,6 +73,7 @@
     color: white;
     padding: 40px;
     gap: 60px;
+    margin-bottom: 50px;
 }
 
 .stats-image img {
@@ -143,6 +150,7 @@
     height: 200px;
     object-fit: cover;
     border-radius: 2rem;
+    display: block;
 }
 
 .formation-box img {
@@ -162,11 +170,13 @@
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, .08), cyan);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding: 1rem 1.5rem 1.2rem;
+    gap: 0.5rem;
+    overflow: hidden;
     transform: translateY(100%);
     transition: .5s ease;
 }
@@ -178,12 +188,19 @@
 
 
 .formation-layer h4{
-    font-size: 2.2rem;
+    font-size: 1.6rem;
+    line-height: 1.15;
+    margin: 0;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .formation-layer p {
-    font-size: 1.3rem;
-    margin: .3rem  0 1rem;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 0;
+    max-height: 3.9rem;
+    overflow: hidden;
 
 }
 
@@ -197,14 +214,18 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5 rem;
-    height: 5rem;
+    width: 3.0rem;
+    height: 3.0rem;
     border-radius: 50%;
-    margin-top: -1rem;
+    margin-top: 0.3rem;
+    flex: 0 0 auto;
+    color: white;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .formation-layer a i {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .contact {
