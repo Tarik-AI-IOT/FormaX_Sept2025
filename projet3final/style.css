@@ -66,16 +66,18 @@ body {
     margin: 0 auto; /* Pour garder centrer, haut et bas 0, gauche et droite auto*/
     padding: 0 2rem;
     position: relative;
+    z-index: 1;
     overflow-x: hidden; /* Si le contenu depasse la largeur, il sera invisible*/
     overflow-y: visible;
 }
 
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
-    z-index: 999;
+    z-index: 10;
 }
 
 header h1{
@@ -132,6 +134,12 @@ spline-viewer {
   pointer-events: none; /* allow mouse wheel to scroll page */
 }
 
+.hero-wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
 main {
     display: flex;
     align-items: center;
@@ -248,13 +256,13 @@ main {
 .btn-signing-main:hover {
     background-color: gray;
 }
-/*
+
 .move3d {
-    position: absolute;
-    top: 0;
-    left: 0%;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
-*/
+
 
 
 @media (max-width: 1300px){
