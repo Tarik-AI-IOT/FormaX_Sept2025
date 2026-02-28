@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <img class="image-gradient" src="images/gradient.png" alt="Image">
+    <div class="layer-blur"></div>
+
+    <div class="container">
+        <header>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">FormaX</h1>
+
+            <nav>
+                <a data-aos="fade-down" data-aos-duration="1500" href="Bienvenue.html">Bienvenue</a>
+                <a data-aos="fade-down" data-aos-duration="2000" href="listeFormation.html">Formations</a>
+                <a data-aos="fade-down" data-aos-duration="2500" href="aPropos.html">À Propos</a>
+                <a data-aos="fade-down" data-aos-duration="3000" href="Contact.html">Contact</a>
+            </nav>
+
+            <button data-aos="fade-down" data-aos-duration="1500" class="btn-inscrire">Inscrire</button>
+        </header>
+    </div>
+
+    <section class="contact">
+        <h2 class="heading" data-aos="fade-left" data-aos-duration="2500">Contactez-Nous</h2>
+
+        <form action="#" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="input-box">
+                <input type="text" placeholder="Nom Complet" required>
+                <input type="email" placeholder="Addresse Courriel">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Numéro de téléphone" required>
+                <input type="text" placeholder="Sujet Email">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Votre Message"></textarea>
+            <input type="submit" value="Envoyer Message" class="btn-signing-main" id="btn-contact">
+        </form>
+
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="javascript.js" ></script>
+</body>
+</html>

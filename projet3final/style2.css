@@ -1,0 +1,264 @@
+/* Style général de la section À propos */
+.apropos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    height: 50vh;
+    padding: 80px 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Cercle lumineux autour du logo */
+.apropos-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00ffff, #b400ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #b400ff;
+    box-shadow: 0 0 25px #00ffff, 0 0 50px #b400ff;
+    animation: glow 3s infinite alternate;
+}
+
+/* Animation du glow (respiration de lumière) */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 20px #00ffff, 0 0 40px #b400ff;
+    }
+    to {
+        box-shadow: 0 0 40px #00ffff, 0 0 80px #b400ff;
+    }
+}
+
+/* Texte à côté du logo */
+.apropos-text {
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* Titre avec effet dégradé */
+.apropos-text h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    background: linear-gradient(135deg, #00ffff, #b400ff);
+    -webkit-background-clip: text; /*Degrader a linterieur des lettre*/
+    -webkit-text-fill-color: transparent; /*Couleur texte transparent pour couleur du fond apparait*/
+}
+
+/* Paragraphe */
+.apropos-text p {
+    color: #d4d4d4;
+    font-size: 16px;
+}
+
+
+.stats-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    color: white;
+    padding: 40px;
+    gap: 60px;
+}
+
+.stats-image img {
+    width: 420px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+    transition: transform 0.4s ease;
+}
+
+.stats-image img:hover {
+    transform: scale(1.05);
+}
+
+.stats-info {
+    max-width: 500px;
+}
+
+.stats-info h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #00ffff, #b400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.stats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stat h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #00ffff;
+    margin: 0;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #b400ff;
+}
+
+.stat p {
+    color: lightgray;
+    font-size: 16px;
+    margin: 5px 0 0;
+}
+
+#formation {
+    margin-bottom: 180px;
+}
+
+.formation h2 {
+    margin-bottom: 4rem;
+}
+
+.formation-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2rem;
+}
+
+.formation-container .formation-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem cyan;
+    overflow: hidden;
+    display: flex;
+}
+
+.formation-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.formation-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.formation-box img:hover {
+    transform: scale(1.1);
+}
+
+.formation-box .formation-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .08), cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.formation-box:hover .formation-layer {
+    transform: translateY(0);
+
+}
+
+
+.formation-layer h4{
+    font-size: 2.2rem;
+}
+
+.formation-layer p {
+    font-size: 1.3rem;
+    margin: .3rem  0 1rem;
+
+}
+
+.formation-layer h4, .formation-layer p {
+    color: #ff7f50;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #b400ff;
+}
+
+
+.formation-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5 rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-top: -1rem;
+}
+
+.formation-layer a i {
+    font-size: 1.6rem;
+}
+
+.contact {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px rgba(180, 0, 255, 0.6);
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input, .contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: lightslategrey;
+    background-color: rgb(55, 70, 85);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form #btn-contact {
+    margin-top: 2rem;
+    cursor: pointer;
+    padding: 1rem 2.8rem;
+    background: cyan;
+    box-shadow: 0 0 1rem cyan;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    color: rgb(15, 16, 30);
+}
