@@ -1,14 +1,29 @@
 # FormaX 🎓💻
 
-<!-- ============================= -->
-<!--  📸 CAPTURES D'ÉCRAN DU SITE  -->
-<!--  Ajoute ici 2 ou 3 screenshots -->
-<!-- ============================= -->
 
-![Screenshot 1](./images/screenshot/1.png)
-![Screenshot 2](./images/screenshot/2.png)
-![Screenshot 3](./images/screenshot/3.png)
+## 📸 Captures d’écran
 
+<p align="center">
+  <img src="./projet3final/images/screenshot/1.png" width="90%">
+  <br>
+  <em>Page d’accueil – Vue principale</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./projet3final/images/screenshot/2.png" width="90%">
+  <br>
+  <em>Page d’accueil – Section inférieure</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./projet3final/images/screenshot/3.png" width="90%">
+  <br>
+  <em>Page À propos – Présentation du projet</em>
+</p>
 ---
 
 ## 📌 À propos du projet
