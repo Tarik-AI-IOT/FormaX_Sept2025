@@ -85,7 +85,7 @@ La formation met l’accent sur la création d’applications structurées et é
 
 - HTML5
 - CSS3
-- (Possiblement JavaScript selon ton projet)
+- JavaScript
 - Font Awesome pour les icônes
 
 ---
@@ -109,7 +109,6 @@ Dans le futur, j’aimerais :
 
 - Ajouter une base de données
 - Ajouter un système d’inscription / connexion
-- Rendre le site entièrement responsive
 - Ajouter plus d’interactivité avec JavaScript
 - Déployer le site en ligne
 
@@ -117,7 +116,7 @@ Dans le futur, j’aimerais :
 
 ## 👨‍💻 Auteur
 
-Projet réalisé par **[Ton Nom Ici]**  
+Projet réalisé par **Tarik A.**  
 Dans le cadre d’un cours de développement web.
 
 ---
